@@ -6,15 +6,37 @@
 
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
-  
+  $("#go").click(function() {
+    var userSays = $("#input3").val();
+    $("#message").text(userSays);
 
+function hello(sentence){   
+ var hello =sentence.slice(0,1);
+                                    
 
 
 });
 
 
 // Create the wordToPigLatin function that takes a word as a parameter and returns a transfromed word. 
-
+  $("#submit").click(function(){
+        var nameInitials = "";
+        var fullName = $('#yourName').val();
+        var nameArray = fullName.split(" ");
+        
+        for(var i = 0; i < nameArray.length; i++){
+           
+        var initial = name.slice (0,1);
+           
+       nameInitials = nameInitials + initial + "."
+            ;
+            
+        }
+ $(".result").append(nameInitials);
+        
+    });
+ 
+});
 
 
 
